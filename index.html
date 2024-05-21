@@ -1,60 +1,179 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beef&Bourbon</title>
-    <link href="https://fonts.cdnfonts.com/css/sansation?styles=755,169710" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sansation?styles=755,169710" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link  href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap"  rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header__container">
-            <div class="header__body">
-                <div class="header__logo">
-                    <a  class="header__img" href="#"><img src="./img/logo.png" alt="logo"></a>
-                </div>
-            <nav class="header__nav">
-              <a href="#" class="header__nav-item">ГЛАВНАЯ</a>
-              <a href="#" class="header__nav-item">МЕНЮ</a>
-              <a href="#" class="header__nav-item">О НАС</a>
-              <a href="#" class="header__nav-item">БРОНЬ</a>
-            </nav>
-            </div>
+      <div class="header__container">
+        <div class="header__body">
+          <div class="header__logo">
+            <a class="header__img" href="#"
+              ><img src="./img/logo.png" alt="logo"
+            /></a>
+          </div>
+          <nav class="header__nav">
+            <a href="#" class="header__nav-item">ГЛАВНАЯ</a>
+            <a href="#" class="header__nav-item">МЕНЮ</a>
+            <a href="#" class="header__nav-item">О НАС</a>
+            <a href="#" class="header__nav-item">БРОНЬ</a>
+          </nav>
         </div>
+      </div>
     </header>
 
     <main class="main">
-        <div class="main__container">
-            <div class="main__body">
-                <video autoplay muted loop class="main__video">
-                    <source src="./video/0504(1) (1).mp4" type="video/mp4">
-                </video>
-            </div>
+      <div class="main__container">
+        <div class="main__body">
+          <video autoplay muted loop class="main__video">
+            <source src="./video/0504(1) (1).mp4" type="video/mp4" />
+          </video>
         </div>
+      </div>
     </main>
 
     <section class="brend">
-        <div class="brend__container">
-            <div class="brend__body">
-                <img class="brend__img-1" src="./img/brend__element.png" alt="">
-                <div class="brend__block-1">
-                    <p class="brend__text-2">20 лет мы готовим <br> стейки безупречного <br> качества для вас</p>
-                    <p class="brend__text">BEEF &<br> BOURBON</p>
-                </div>
-                <div class="brend__block-2">
-                    <button class="brend__button">ЗАБРОНИРОВАТЬ</button>
-                </div>
-                
-            </div>
+      <div class="brend__container">
+        <div class="brend__body">
+          <img class="brend__img-1" src="./img/brend__element.png" alt="" />
+          <div class="brend__block-1">
+            <p class="brend__text-2">
+              20 лет мы готовим <br />
+              стейки безупречного <br />
+              качества для вас
+            </p>
+            <p class="brend__text">
+              BEEF &<br />
+              BOURBON
+            </p>
+          </div>
+          <div class="brend__block-2">
+            <button class="brend__button">ЗАБРОНИРОВАТЬ</button>
+          </div>
         </div>
+      </div>
     </section>
-    
-</body>
+
+    <section class="rebates">
+      <div class="rebates__container">
+        <div class="rebates__body">
+            <p class="rebates__name">Каждый понедельник - <br>стейки по себестоимости</p>
+
+            
+            <div class="rebates__swiper-body">
+                
+                <div class="swiper mySwiper rebates__swiper">
+                <div class="swiper-wrapper">
+
+<!-- /* ================================================================================================== */ -->
+
+                    <div class="swiper-slide rebates__slide">
+                        <div class="rebates__cards">
+                                <div class="rebates__card-top">
+                                    <img class="rebates__card-img-1" src="./img/rebates__img-1.png" alt="">
+                                </div>
+                               
+                                <div class="rebates__under">
+                                    <div class="rebates__card-left">
+                                        <p class="rebates__card-text-1">Тапас-сет</p>
+                                        <p class="rebates__card-text-2">350г</p>
+                                    </div>
+                                    <div class="rebates__card-right">
+                                        <p class="rebates__card-text-3"> 1290 ₽</p> 
+
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide rebates__slide">
+                        <div class="rebates__cards">
+                                <div class="rebates__card-top">
+                                    <img class="rebates__card-img-1" src="./img/rebates__img-2.png" alt="">
+                                </div>
+                               
+                                <div class="rebates__under">
+                                    <div class="rebates__card-left">
+                                        <p class="rebates__card-text-1">Тапас-сет</p>
+                                        <p class="rebates__card-text-2">400г</p>
+                                    </div>
+                                    <div class="rebates__card-right">
+                                        <p class="rebates__card-text-4">3690 ₽</p>
+                                        <p class="rebates__card-text-3">1690 ₽</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide rebates__slide">
+                        <div class="rebates__cards">
+                                <div class="rebates__card-top">
+                                    <img class="rebates__card-img-1" src="./img/rebates__img-3.png" alt="">
+                                </div>
+                               
+                                <div class="rebates__under">
+                                    <div class="rebates__card-left">
+                                        <p class="rebates__card-text-1">Тапас-сет</p>
+                                        <p class="rebates__card-text-2">300г</p>
+                                    </div>
+                                    <div class="rebates__card-right">
+                                        <p class="rebates__card-text-3">1990 ₽</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide rebates__slide">
+                        <div class="rebates__cards">
+                                <div class="rebates__card-top">
+                                    <img class="rebates__card-img-2" src="./img/rebates__img-5.png" alt="">
+                                </div>
+                               
+                                <div class="rebates__under">
+                                    <div class="rebates__card-left">
+                                        <p class="rebates__card-text-1">Тапас-сет</p>
+                                        <p class="rebates__card-text-2">350г</p>
+                                    </div>
+                                    <div class="rebates__card-right">
+                                        <p class="rebates__card-text-3">1990 ₽</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                </div>
+                  
+            </div>
+                
+                <div class="swiper-button-next"><img src="./img/rebates__button-next.png" alt=""></div>
+                <div class="swiper-button-prev"><img src="./img/rebates__button-prev.png" alt=""></div>
+            </div>
+            
+            <div class="swiper-pagination"></div>
+<!-- /* ================================================================================================== */ -->
+        </div>
+      </div>
+    </section>
+
+  </body>
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="./script.js"></script>
 </html>
