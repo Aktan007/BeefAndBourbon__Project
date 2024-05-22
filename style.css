@@ -81,6 +81,13 @@ p {
     font-weight: 750;
 }
 
+.brend__text::before {
+    content: url('./img/brend__element.png');
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -140px;
+}
+
 .brend__block-1 {
     padding-top: 90px;
 }
@@ -108,12 +115,6 @@ p {
     font-weight: 700;
     cursor: pointer;
     border: 3px solid white;
-}
-
-.brend__img-1 {
-    position: absolute;
-    bottom: -340px;
-    left: 275px;
 }
 
 /* ================================================================================================== */
