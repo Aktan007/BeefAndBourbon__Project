@@ -89,7 +89,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* ================================================================================================== */
 
 .brend {
-    background-image: url(./img/background__brend.jpg);
+    background-image: url('../img/background__brend.jpg');
     height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -109,7 +109,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .brend__text::before {
-    content: url('./img/brend__element.png');
+    content: url('../img/brend__element.png');
     position: absolute;
     margin-left: 20px;
     margin-top: -140px;
@@ -348,7 +348,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .suggestion__container::before {
-    content: url('./img/sugestion__baclground-3.png');
+    content: url('../img/sugestion__baclground-3.png');
     z-index: -10;
     position: absolute;
     margin-top: -210px;
@@ -420,7 +420,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .suggestion__right-block-2::after {
-    content: url('./img/suggestion__background-img-1.png');
+    content: url('../img/suggestion__background-img-1.png');
     z-index: -10;
     position: absolute;
     margin-left: 330px;
@@ -500,7 +500,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .suggestion__under-under::after {
-    content: url('./img/suggestion__background-img-2.png');
+    content: url('../img/suggestion__background-img-2.png');
     position: absolute;
     margin-left: 800px;
     margin-top: -80px;
