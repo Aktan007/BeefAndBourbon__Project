@@ -517,7 +517,7 @@ body::-webkit-scrollbar-thumb:hover {
 footer {
     background-color: #181818;
     padding-top: 50px;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
 }
 
 /* .footer__body {
@@ -666,4 +666,14 @@ input {
     font-weight: 300;
     font-size: 20px;
     line-height: 30px;
+}
+
+.footer__under {
+    background-color: #282828;
+    height: 40px;
+    margin-top: 40px;
+    font-family: "Piazzolla", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
