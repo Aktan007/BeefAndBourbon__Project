@@ -63,6 +63,11 @@ body::-webkit-scrollbar-thumb:hover {
 
 .header__nav-item {
     margin-left: 40px;
+    transition: all 0.3s ease 0s;
+}
+
+.header__nav-item:hover {
+    color: #BC9060;
 }
 
 /* ================================================================================================== */
@@ -129,7 +134,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .brend__button {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
     font-size: 20px;
     padding: 25px 95px 25px 95px;
     border-radius: 60px;
@@ -137,6 +142,11 @@ body::-webkit-scrollbar-thumb:hover {
     font-weight: 700;
     cursor: pointer;
     border: 3px solid white;
+    transition: all 0.3s ease 0s;
+}
+
+.brend__button:hover {
+    background-color: black;
 }
 
 /* ================================================================================================== */
