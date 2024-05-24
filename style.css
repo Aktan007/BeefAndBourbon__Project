@@ -520,10 +520,10 @@ footer {
     padding-bottom: 50px;
 }
 
-.footer__body {
-    /* display: flex;
-    justify-content: space-around; */
-}
+/* .footer__body {
+    display: flex;
+    justify-content: space-around;
+} */
 
 .footer__container {
     max-width: 1410px;
