@@ -632,7 +632,7 @@ input[type="email"]:focus {
   outline: none;
   border: none;
   height: 37px;
-  width: 35px;
+  width: 354px;
 }
 
 .footer__email-button {
