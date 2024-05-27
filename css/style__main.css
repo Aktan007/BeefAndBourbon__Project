@@ -748,6 +748,7 @@ input[type="email"]:focus {
   font-size: 64px;
   position: relative;
   bottom: 50px;
+  right: 100px;
   font-family: montserrat;
 }
 .next-p { 
@@ -757,7 +758,7 @@ input[type="email"]:focus {
   bottom: 50px;
   font-family: montserrat;
   position: relative;
-  left: 150px;
+  left: 240px;
 }
 
 /* popup classes */
@@ -816,18 +817,23 @@ input[type="email"]:focus {
 
 .reservation-rules {
     position: relative;
-    top: 20px;
     left: 90px;
+    top: -2.5em;
 }
 
 .reservation__button {
     position: relative;
     left: 750px;
-    bottom: 200px;
+    bottom: 250px;
 }
 
 .reservation__button__telegram {
     position: relative;
     left: 320px;
-    bottom: 50px;
+    bottom: 120px;
+}
+
+.beef-bourbon-reservation-main{
+    position: relative;
+    bottom: 100px;
 }
