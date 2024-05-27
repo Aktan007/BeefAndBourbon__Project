@@ -701,7 +701,24 @@ input[type="email"]:focus {
 }
 /* ================================================================================================== */
 .main-reservation {
-    max-width: 1410px;
+    max-width: 500px;
     width: 100%;
     margin: 0 auto;
+}
+.title-reservation {
+    text-align: center;
+    font-size: 48px;
+}
+
+.title-reservation-yello {
+    text-align: center;
+    font-size: 128px;
+    color: #BC9060;
+    position: relative;
+    right: 200px;
+}
+
+.main-resevation-text {
+    text-align: center;
+    font-size: 64px;
 }
