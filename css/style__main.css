@@ -699,3 +699,9 @@ input[type="email"]:focus {
     justify-content: center;
     align-items: center;
 }
+/* ================================================================================================== */
+.main-reservation {
+    max-width: 1410px;
+    width: 100%;
+    margin: 0 auto;
+}
