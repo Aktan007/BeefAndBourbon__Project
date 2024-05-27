@@ -700,21 +700,14 @@ input[type="email"]:focus {
 .reservation__button,
 .reservation__button__telegram {
   background-color: rgba(0, 0, 0, 0.5);
-  font-size: 15px;
-  padding: 15px 150px;
+  font-size: 20px;
+  padding: 25px 95px 25px 95px;
   border-radius: 60px;
   font-family: "Sansation", sans-serif;
   font-weight: 700;
   cursor: pointer;
   border: 3px solid white;
   transition: all 0.3s ease 0s;
-  background-color: #282828;
-  height: 40px;
-  margin-top: 50px;
-  font-family: "Piazzolla", serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 /* ================================================================================================== */
 .main-reservation {
