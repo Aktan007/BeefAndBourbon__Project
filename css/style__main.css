@@ -696,8 +696,6 @@ input[type="email"]:focus {
   justify-content: center;
   align-items: center;
 }
-
-.reservation__button,
 .reservation__button__telegram {
   background-color: rgba(0, 0, 0, 0.5);
   font-size: 20px;
@@ -709,11 +707,24 @@ input[type="email"]:focus {
   border: 3px solid white;
   transition: all 0.3s ease 0s;
 }
+.reservation__button { 
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    padding: 25px 95px 25px 95px;
+    border-radius: 60px;
+    font-family: "Sansation", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    border: 3px solid white;
+    transition: all 0.3s ease 0s;
+}
 /* ================================================================================================== */
 .main-reservation {
-  max-width: 1000px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  position: relative;
+  bottom: 60px;
 }
 .title-reservation {
   text-align: center;
@@ -739,12 +750,53 @@ input[type="email"]:focus {
   bottom: 50px;
   font-family: montserrat;
 }
+
 .next-p { 
-    text-align: center;
+  text-align: center;
   font-size: 64px;
   position: relative;
   bottom: 50px;
   font-family: montserrat;
   position: relative;
   left: 150px;
+}
+
+.create-line { 
+    width: 100%;
+    border-top: 3px solid white;
+    position: absolute;
+    top: 650px;
+    margin-left: 40px;    
+}
+
+.reservation-list {
+    width: 463px;
+    line-height: 24px;
+    font-size: 15px;
+    font-family: montserrat;
+}
+
+.h1-list {
+    position: relative;
+    left: 40px;
+    font-size: 20px;
+    font-family: montserrat;
+}
+
+.reservation-rules {
+    position: relative;
+    top: 20px;
+    left: 90px;
+}
+
+.reservation__button {
+    position: relative;
+    left: 750px;
+    bottom: 200px;
+}
+
+.reservation__button__telegram {
+    position: relative;
+    left: 320px;
+    bottom: 50px;
 }
