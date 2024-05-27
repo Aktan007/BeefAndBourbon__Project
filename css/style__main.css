@@ -711,24 +711,40 @@ input[type="email"]:focus {
 }
 /* ================================================================================================== */
 .main-reservation {
-  max-width: 500px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
 .title-reservation {
   text-align: center;
   font-size: 48px;
+  position: relative;
+  top: 90px;
+  font-family: sansation;
 }
 
 .title-reservation-yello {
   text-align: center;
-  font-size: 128px;
+  font-size: 150px;
   color: #bc9060;
   position: relative;
-  right: 200px;
+  top: 60px;
+  font-family: piazzolla;
 }
 
 .main-resevation-text {
   text-align: center;
   font-size: 64px;
+  position: relative;
+  bottom: 50px;
+  font-family: montserrat;
+}
+.next-p { 
+    text-align: center;
+  font-size: 64px;
+  position: relative;
+  bottom: 50px;
+  font-family: montserrat;
+  position: relative;
+  left: 150px;
 }
