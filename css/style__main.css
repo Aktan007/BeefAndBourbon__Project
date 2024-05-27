@@ -739,12 +739,33 @@ input[type="email"]:focus {
   bottom: 50px;
   font-family: montserrat;
 }
-.next-p { 
-    text-align: center;
+.next-p {
+  text-align: center;
   font-size: 64px;
   position: relative;
   bottom: 50px;
   font-family: montserrat;
   position: relative;
   left: 150px;
+}
+
+/* popup classes */
+#popupMenu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#popupMenu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#popupMenu a:hover {
+  background-color: #f1f1f1;
 }
