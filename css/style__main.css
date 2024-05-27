@@ -708,4 +708,34 @@ input[type="email"]:focus {
   cursor: pointer;
   border: 3px solid white;
   transition: all 0.3s ease 0s;
+  background-color: #282828;
+  height: 40px;
+  margin-top: 50px;
+  font-family: "Piazzolla", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ================================================================================================== */
+.main-reservation {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+.title-reservation {
+  text-align: center;
+  font-size: 48px;
+}
+
+.title-reservation-yello {
+  text-align: center;
+  font-size: 128px;
+  color: #bc9060;
+  position: relative;
+  right: 200px;
+}
+
+.main-resevation-text {
+  text-align: center;
+  font-size: 64px;
 }
