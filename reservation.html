@@ -97,9 +97,9 @@
         <script type="module" src="scripts/reservation.js"></script>
         <script type="module" src="scripts/backend.js"></script>
         <button id="popupBtn" class="reservation__button">
-          <p class="reservation__button-text">ЗАБРОНИРОВАТЬ</p>
+          ЗАБРОНИРОВАТЬ
         </button>
-        <div id="popupMenu" class="popup">
+        <div id="popupMenu">
           <div id="popup" class="popup">
             <p class="popup__text">Забронировать стол</p>
             <form id="popupForm">
@@ -125,13 +125,7 @@
             </form>
           </div>
         </div>
-        <button class="reservation__button__telegram">
-          <a
-            href="https://t.me/BeefAndBourbon_bot"
-            class="reservation__button-text"
-            >ЗАБРОНИРОВАТЬ В ТЕЛЕГРАМ</a
-          >
-        </button>
+        <button id="link_button" class="reservation__button__telegram" onclick="document.location='https://t.me/BeefAndBourbon_bot'">Забронировать в телеграм</button>
       </section>
       </div>
     </main>
