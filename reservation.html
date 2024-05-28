@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beef&Bourbon</title>
+    <title>Бронирование</title>
     <link
       href="https://fonts.cdnfonts.com/css/sansation?styles=755,169710"
       rel="stylesheet"
@@ -48,20 +48,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Piazzolla:ital,opsz,wght@0,8..30,500;1,8..30,500&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Tinos&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth@0,75..100;1,75..100&display=swap"
-      rel="stylesheet"
-    />
     <link rel="shortcut icon" href="./img/logo.png" />
-    <link rel="stylesheet" href="./css/style__about.css" />
+    <link rel="stylesheet" href="css/style__main.css" />
   </head>
   <body>
     <header>
@@ -81,29 +69,70 @@
         </div>
       </div>
     </header>
-
-    <section class="about">
-      <div class="about__container">
-        <div class="about__body">
-          <p class="about__main-text">О НАС</p>
-          <img src="./img/about__img-1.png" alt="" class="about__img-1" />
-          <p class="about__text-1">James Michael Brown</p>
-          <p class="about__text-2">История названия "Beef & Bourbon"</p>
-          <p class="about__text-3">
-            В начале 20 века, на заре сухого закона в США, существовала<br />
-            подпольная сеть speakeasy-баров, где подавали нелегальный
-            <br />алкоголь. Одним из самых популярных напитков был бурбон,<br />
-            который контрабандой доставлялся из южных штатов. В этих же
-            <br />барах подавали сытные блюда из говядины, чтобы посетители<br />
-            могли насытиться и скрыть запах алкоголя. Название "Beef <br />
-            & Bourbon" - это дань уважения той эпохе, когда вкусная еда и <br />
-            крепкий напиток объединяли людей в тайных заведениях.
-          </p>
-          <div class="about__under-line"></div>
+    <main class="main-reservation">
+      <section class="main-reservation-container">
+        <h1 class="title-reservation">Бронь</h1>
+        <h1 class="title-reservation-yello">Beef&Bourbon</h1>
+        <p class="main-resevation-text">— роскошный стейк-хаус в</p>
+        <p class="next-p">самом центре Москвы.</p>
+      </section>
+      <div class="create-line"></div>
+      <section class="reservation-rules">
+        <h1 class="h1-list">ПРАВИЛА БРОНИРОВАНИЯ</h1>
+        <ol class="reservation-list">
+          <li>
+            Бронирование столов осуществляется не позднее, чем за 1 час до
+            желаемого времени визита.
+          </li>
+          <li>В случае опоздания бронь сохраняется в течение 20 минут.</li>
+          <li>
+            Рассадка в зале осуществляется по принципу — количество гостей равно
+            посадочным местам.
+          </li>
+          <li>Посещение ресторана с животными запрещено.</li>
+        </ol>
+      </section>
+      <div class="buttons__container">
+        <script type="module" src="scripts/reservation.js"></script>
+        <script type="module" src="scripts/backend.js"></script>
+        <button id="popupBtn" class="reservation__button">
+          <p class="reservation__button-text">ЗАБРОНИРОВАТЬ</p>
+        </button>
+        <div id="popupMenu" class="popup">
+          <div id="popup" class="popup">
+            <p class="popup__text">Забронировать стол</p>
+            <form id="popupForm">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" name="name" required />
+              <label for="phone">Ваш телефон:</label>
+              <input
+                type="tel"
+                pattern="+[7]{3}-[0-9]{3}-[0-9]{4}"
+                id="phone"
+                name="phone"
+                required
+              />
+              <label for="date">Дата брони:</label>
+              <input type="date" name="date" id="date" required />
+              <label for="time">Время:</label>
+              <input type="time" name="time" id="time" required />
+              <label for="counter">Количество человек:</label>
+              <input type="number" name="number" id="number" required />
+              <label for="text">Комментарий к брони</label>
+              <input type="text" name="comment" id="comment" />
+              <button type="submit">Забронировать</button>
+            </form>
+          </div>
         </div>
+        <button class="reservation__button__telegram">
+          <a
+            href="https://t.me/BeefAndBourbon_bot"
+            class="reservation__button-text"
+            >ЗАБРОНИРОВАТЬ В ТЕЛЕГРАМ</a
+          >
+        </button>
       </div>
-    </section>
-
+    </main>
     <footer>
       <div class="footer__container">
         <div class="footer__body">
