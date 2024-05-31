@@ -23,7 +23,6 @@ app.post("/reserve", (req, res) => {
       console.error("Error reading file:", err);
       return res.status(500).send("Server Error");
     }
-
     let reservations = [];
 
     if (data) {
