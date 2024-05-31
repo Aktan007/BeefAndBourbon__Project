@@ -60,7 +60,8 @@
     <main class="main-reservation">
       <section class="main-reservation-container">
         <h1 class="title-reservation">Бронь</h1>
-        <h1 class="title-reservation-yello">Beef&Bourbon</h1>
+        <section class="beef-bourbon-reservation-main">
+        <h1 class="title-reservation-yello">Beef & Bourbon</h1>
         <p class="main-resevation-text">— роскошный стейк-хаус в</p>
         <p class="next-p">самом центре Москвы.</p>
       </section>
@@ -84,9 +85,9 @@
         <script type="module" src="scripts/reservation.js"></script>
         <script type="module" src="scripts/backend.js"></script>
         <button id="popupBtn" class="reservation__button">
-          <p class="reservation__button-text">ЗАБРОНИРОВАТЬ</p>
+          ЗАБРОНИРОВАТЬ
         </button>
-        <div id="popupMenu" class="popup">
+        <div id="popupMenu">
           <div id="popup" class="popup">
             <p class="popup__text">Забронировать стол</p>
             <form id="popupForm">
@@ -112,13 +113,8 @@
             </form>
           </div>
         </div>
-        <button class="reservation__button__telegram">
-          <a
-            href="https://t.me/BeefAndBourbon_bot"
-            class="reservation__button-text"
-            >ЗАБРОНИРОВАТЬ В ТЕЛЕГРАМ</a
-          >
-        </button>
+        <button id="link_button" class="reservation__button__telegram" onclick="document.location='https://t.me/BeefAndBourbon_bot'">Забронировать в телеграм</button>
+      </section>
       </div>
     </main>
     <footer>
