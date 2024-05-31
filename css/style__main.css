@@ -710,7 +710,7 @@ input[type="email"]:focus {
 .reservation__button {
   background-color: rgba(0, 0, 0, 0.5);
   font-size: 20px;
-  padding: 25px 95px 25px 95px;
+  padding: 25px 135px 25px 135px;
   border-radius: 60px;
   font-family: "Sansation", sans-serif;
   font-weight: 700;
@@ -725,7 +725,7 @@ input[type="email"]:focus {
   margin: 0 auto;
   position: relative;
   bottom: 60px;
-  height: 90vh;
+  height: 100vh;
 }
 .title-reservation {
   text-align: center;
@@ -784,10 +784,11 @@ input[type="email"]:focus {
 
 .create-line {
   width: 100%;
-  border-top: 3px solid white;
+  border-top: 2px solid white;
   position: absolute;
   top: 600px;
   margin-left: 40px;
+  border-radius: 30px;
 }
 
 .reservation-list {
@@ -816,13 +817,13 @@ input[type="email"]:focus {
 
 .reservation__button {
   position: relative;
-  left: 750px;
+  left: 780px;
   bottom: 300px;
 }
 
 .reservation__button__telegram {
   position: relative;
-  left: 320px;
+  left: 325px;
   bottom: 170px;
 }
 
