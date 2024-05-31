@@ -99,31 +99,36 @@
         <button id="popupBtn" class="reservation__button">
           ЗАБРОНИРОВАТЬ
         </button>
-        <div id="popupMenu">
-          <div id="popup" class="popup">
-            <p class="popup__text">Забронировать стол</p>
-            <form id="popupForm">
-              <label for="name">Ваше имя:</label>
-              <input type="text" id="name" name="name" required />
-              <label for="phone">Ваш телефон:</label>
-              <input
-                type="tel"
-                pattern="+[7]{3}-[0-9]{3}-[0-9]{4}"
-                id="phone"
-                name="phone"
-                required
-              />
-              <label for="date">Дата брони:</label>
-              <input type="date" name="date" id="date" required />
-              <label for="time">Время:</label>
-              <input type="time" name="time" id="time" required />
-              <label for="counter">Количество человек:</label>
-              <input type="number" name="number" id="number" required />
-              <label for="text">Комментарий к брони</label>
-              <input type="text" name="comment" id="comment" />
-              <button type="submit">Забронировать</button>
-            </form>
-          </div>
+        <div class="form-container" id="popupMenu">
+          <form class="reservation-form" action="/reserve" method="POST">
+            <h2>Забронировать стол</h2>
+      
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="name" placeholder="Имя" required>
+      
+            <label for="phone">Ваш телефон</label>
+            <div class="phone-container">
+              <input type="tel" id="phone" name="phone" placeholder="8(999) 999-99-99" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            </div>
+      
+            <label for="date">Дата брони</label>
+            <input type="date" id="date" name="date" required>
+      
+            <label for="time">Время</label>
+            <input type="time" id="time" name="time" value="18:00" required>
+      
+            <label for="people">Количество человек</label>
+            <div class="people-container">
+              <button type="button" id="decrease">-</button>
+              <input type="number" id="people" name="people" value="1" min="1" required>
+              <button type="button" id="increase">+</button>
+            </div>
+      
+            <label for="comment">Комментарий к брони</label>
+            <textarea id="comment" name="comment"></textarea>
+      
+            <button type="submit">ЗАБРОНИРОВАТЬ</button>
+          </form>
         </div>
         <button id="link_button" class="reservation__button__telegram" onclick="document.location='https://t.me/BeefAndBourbon_bot'">Забронировать в телеграм</button>
       </section>
