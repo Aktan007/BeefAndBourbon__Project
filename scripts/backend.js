@@ -2,7 +2,7 @@ const name = document.getElementById("name").value;
 const phone = document.getElementById("phone").value;
 const date = document.getElementById("date").value;
 const time = document.getElementById("time").value;
-const number = document.getElementById("number").value;
+const number = document.getElementById("people").value;
 const comment = document.getElementById("comment").value;
 import fs from "fs-extra";
 // Get the values from the input fields
