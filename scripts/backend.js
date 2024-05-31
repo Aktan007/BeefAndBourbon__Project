@@ -1,30 +1,53 @@
-const name = document.getElementById("name").value;
-const phone = document.getElementById("phone").value;
-const date = document.getElementById("date").value;
-const time = document.getElementById("time").value;
-const number = document.getElementById("people").value;
-const comment = document.getElementById("comment").value;
+// Import the required modules
+import express from "express";
 import fs from "fs-extra";
-// Get the values from the input fields
 
-// Create a JSON object with the reservation data
-const reservation = {
-  name,
-  phone,
-  date,
-  time,
-  number,
-  comment,
-};
+// Create an Express app
+const app = express();
 
-// Convert the JSON object to a JSON string
-const jsonData = JSON.stringify(reservation, null, 2);
+// Parse the request body as JSON
+app.use(express.json());
 
-// Write the JSON data to a file using fs-extra
-fs.writeJSON("data.json", reservation, { spaces: 2 })
-  .then(() => {
-    console.log("Data written successfully");
-  })
-  .catch((error) => {
-    console.error("Error writing data:", error);
-  });
+// Define a POST endpoint for handling form submissions
+app.post("/submit", (req, res) => {
+  const { name, phone, date, time, number, comment } = req.body;
+
+  // Create a JSON object with the reservation data
+  const reservation = {
+    name,
+    phone,
+    date,
+    time,
+    number,
+    comment,
+  };
+
+  // Convert the JSON object to a JSON string
+  const jsonData = JSON.stringify(reservation, null, 2);
+  fs.ensureDir("data")
+    .then(() => {
+      // Generate a unique filename for the JSON file
+      const fileName = `data/reservation-${Date.now()}.json`;
+
+      // Write the JSON data to a file using fs-extra
+      fs.writeJSON(fileName, reservation, { spaces: 2 })
+        .then(() => {
+          console.log("Data written successfully");
+          res.status(200).json({ message: "Data written successfully" });
+        })
+        .catch((error) => {
+          console.error("Error writing data:", error);
+          res.status(500).json({ message: "Error writing data" });
+        });
+    })
+    .catch((error) => {
+      console.error("Error creating data directory:", error);
+      res.status(500).json({ message: "Error creating data directory" });
+    });
+});
+
+// Start the server
+const PORT = process.env.PORT || 5003;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
