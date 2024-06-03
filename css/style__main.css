@@ -80,7 +80,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .main__video {
   width: 100%;
-  z-index: -100;
+  z-index: 999;
   position: absolute;
   top: 70px;
   left: 0px;
@@ -710,7 +710,7 @@ input[type="email"]:focus {
 .reservation__button {
   background-color: rgba(0, 0, 0, 0.5);
   font-size: 20px;
-  padding: 25px 95px 25px 95px;
+  padding: 25px 135px 25px 135px;
   border-radius: 60px;
   font-family: "Sansation", sans-serif;
   font-weight: 700;
@@ -727,7 +727,7 @@ input[type="email"]:focus {
   margin: 0 auto;
   position: relative;
   bottom: 60px;
-  height: 90vh;
+  height: 100vh;
 }
 .title-reservation {
   text-align: center;
@@ -766,6 +766,7 @@ input[type="email"]:focus {
 
 /* popup classes */
 .form-container {
+  font-family: montserrat;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -777,6 +778,7 @@ input[type="email"]:focus {
   width: 500px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   font-size: 25px;
+  z-index: 9999;
 }
 
 .reservation-form h2 {
@@ -865,10 +867,11 @@ input[type="number"] {
 
 .create-line {
   width: 100%;
-  border-top: 3px solid white;
+  border-top: 2px solid white;
   position: absolute;
   top: 600px;
   margin-left: 40px;
+  border-radius: 30px;
 }
 
 .reservation-list {
@@ -897,13 +900,13 @@ input[type="number"] {
 
 .reservation__button {
   position: relative;
-  left: 750px;
+  left: 780px;
   bottom: 300px;
 }
 
 .reservation__button__telegram {
   position: relative;
-  left: 320px;
+  left: 325px;
   bottom: 170px;
 }
 
