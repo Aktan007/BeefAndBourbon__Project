@@ -194,6 +194,8 @@ body::-webkit-scrollbar-thumb:hover {
   font-family: "Sansation", sans-serif;
   font-size: 37px;
   margin: 0 10px;
+  top: 10%;
+  position: relative;
   letter-spacing: 1.5px;
 }
 
@@ -205,6 +207,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .dish {
   display: grid;
+  text-align: center;
   width: 250px;
   height: 380px;
   margin: 0 5%;
@@ -212,11 +215,25 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 5%;
   padding: 0 1.5%;
   font-size: 14.7px;
-  font-family: "Piazzolla", serif;
-  letter-spacing: 0.5px;
 }
 
-.dish span {
+.dish_img {
+  position: relative;
+  left: 22px;
+}
+
+.to_the_dish {
+  font-family: "Piazzolla", serif;
+  font-size: 14.7px;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  width: 240px;
+  height: 90px;
+  bottom: 22%;
+  position: relative;
+}
+
+.to_the_dish span {
   font-size: 17px;
   font-weight: bold;
   font-family: "Sansation", sans-serif;
@@ -228,7 +245,8 @@ body::-webkit-scrollbar-thumb:hover {
   height: 28px;
   width: 83px;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 800;
+  font-family: "Piazzolla", serif;
   top: 30%;
   position: relative;
   right: 0%;
