@@ -212,8 +212,8 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 5%;
   padding: 0 1.5%;
   font-size: 14.7px;
-  font-family: "Sansation", sans-serif;
-  letter-spacing: 1.5px;
+  font-family: "Piazzolla", serif;
+  letter-spacing: 0.5px;
 }
 
 .dish span {
@@ -221,7 +221,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: bold;
   font-family: "Sansation", sans-serif;
   position: relative;
-  bottom: 10%;
+  top: 2%;
 }
 
 .price {
