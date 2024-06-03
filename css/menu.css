@@ -16,6 +16,28 @@ p {
   margin: 0;
 }
 
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #0d0d0d;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #171717;
+  border-radius: 8px;
+  border: 2px solid #535353;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #3e3e3e;
+}
+
 /* ================================================================================================== */
 
 .header__container {
@@ -48,6 +70,15 @@ p {
   color: #bc9060;
 }
 
+.header__nav-item {
+  margin-left: 40px;
+  transition: all 0.3s ease 0s;
+}
+
+.header__nav-item:hover {
+  color: #bc9060;
+}
+
 /* ================================================================================================== */
 
 .container {
@@ -63,7 +94,7 @@ p {
 
 .swiper-text {
   position: absolute;
-  top: 22%;
+  top: 15%;
   transform: translateY(-50%);
   left: 0;
   right: 0;
@@ -163,6 +194,7 @@ p {
   font-family: "Sansation", sans-serif;
   font-size: 37px;
   margin: 0 10px;
+  letter-spacing: 1.5px;
 }
 
 .dishes {

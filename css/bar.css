@@ -66,13 +66,15 @@ p {
   display: flex;
   width: 500px;
   height: 45px;
-  margin: 25px 0;
+  margin: 50px 0;
+  font-family: "Sansation", sans-serif;
+  font-weight: 600;
 }
 
 .menu_section_name {
   font-family: "Sansation", sans-serif;
   position: relative;
-  font-size: 37px;
+  font-size: 32px;
   margin: 0 10px;
   top: 9px;
 }
@@ -126,7 +128,8 @@ p {
 
 .exit__nav-item {
   color: #656363;
-  font-family: "Sansation", sans-serif;
+  font-family: "Piazzolla", serif;
+  font-size: 30px;
 }
 
 .exit__nav-item:hover {
