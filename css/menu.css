@@ -173,21 +173,22 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* ================================================================================================== */
 .menu {
-  display: grid;
+  flex-direction: column;
   text-align: center;
-  margin: 10px 15%;
+  margin: 10px 10%;
   margin-bottom: 10%;
 }
 
 .menu_section_1 {
-  display: grid;
+  flex-direction: column;
+  text-align: left;
 }
 
 .text-menu {
   display: flex;
   width: 500px;
   height: 45px;
-  margin: 25px 0;
+  margin: 60px -25px;
 }
 
 .menu_section_name {
@@ -208,24 +209,35 @@ body::-webkit-scrollbar-thumb:hover {
 .dish {
   display: grid;
   text-align: center;
-  width: 250px;
-  height: 380px;
-  margin: 0 5%;
+  width: 350px;
+  height: 480px;
+  margin: 0 2%;
   background-color: #151515;
   border-radius: 5%;
-  padding: 0 1.5%;
   font-size: 14.7px;
+}
+
+.dish:hover {
+  transition: all ease-in-out .5s;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -moz-transform: scale(1.2);
 }
 
 .dish_img {
   position: relative;
-  left: 22px;
+  width: 350px;
+  text-align: center;
+  border-radius: 5%;
 }
 
 .to_the_dish {
   font-family: "Piazzolla", serif;
   font-size: 14.7px;
   font-weight: 100;
+  text-align: left;
+  margin: 0 7%;
   letter-spacing: 0.5px;
   width: 240px;
   height: 90px;
@@ -247,9 +259,9 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 20px;
   font-weight: 800;
   font-family: "Piazzolla", serif;
-  top: 30%;
+  top: 40%;
   position: relative;
-  right: 0%;
+  left: 5%;
 }
 
 .price:hover {
