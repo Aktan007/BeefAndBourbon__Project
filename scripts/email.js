@@ -17,14 +17,11 @@ document
       .then(function (response) {
         if (response.ok) {
           console.log("Email sent successfully");
-          // You can add additional code here to display a success message or clear the form fields
         } else {
           console.error("Error sending email:", response.statusText);
-          // You can add additional code here to display an error message or handle the failure
         }
       })
       .catch(function (error) {
         console.error("Error:", error);
-        // You can add additional code here to display an error message or handle the failure
       });
   });
