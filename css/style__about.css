@@ -141,9 +141,14 @@ body::-webkit-scrollbar-thumb:hover {
 /* ================================================================================================== */
 
 footer {
+<<<<<<< HEAD
+    background-color: #181818;
+    padding-top: 50px;
+=======
   background-color: #181818;
   padding-top: 50px;
   /* padding-bottom: 50px; */
+>>>>>>> cd4b62d8ff497cd403e79fa62a9fd59926fa1570
 }
 
 /* .footer__body {
