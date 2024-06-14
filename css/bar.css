@@ -98,6 +98,14 @@ p {
   letter-spacing: 1.5px;
 }
 
+.dish:hover {
+  transition: all ease-in-out .5s;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+}
+
 .dish span {
   font-size: 17px;
   font-weight: bold;
