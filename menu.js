@@ -14,3 +14,22 @@ var swiper = new Swiper(".mySwiper", {
     delay: 7000,
   },
 });
+
+const modal = document.getElementById("modal");
+const btn = document.getElementById("btn");
+
+function openModal(){
+  modal.style.display = "flex";
+}
+
+function closeModal(){
+  modal.style.display = "none";
+}
+
+btn.onclick = openModal;
+
+window.onclick = function(e) {
+  if (e.target == modal) {
+    closeModal();
+  }
+}
