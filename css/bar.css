@@ -53,12 +53,13 @@ p {
 .menu {
   display: grid;
   text-align: center;
-  margin: 10px 15%;
+  margin: 10px 10%;
   margin-bottom: 10%;
 }
 
 .menu_section_1 {
-  display: grid;
+  flex-direction: column;
+  text-align: left;
   margin: 4%;
 }
 
@@ -66,17 +67,16 @@ p {
   display: flex;
   width: 500px;
   height: 45px;
-  margin: 50px 0;
-  font-family: "Sansation", sans-serif;
-  font-weight: 600;
+  margin: 60px -25px;
 }
 
 .menu_section_name {
   font-family: "Sansation", sans-serif;
-  position: relative;
-  font-size: 32px;
+  font-size: 37px;
   margin: 0 10px;
-  top: 9px;
+  top: 10%;
+  position: relative;
+  letter-spacing: 1.5px;
 }
 
 .dishes {
@@ -87,15 +87,13 @@ p {
 
 .dish {
   display: grid;
-  width: 250px;
-  height: 380px;
-  margin: 0 5%;
+  text-align: center;
+  width: 350px;
+  height: 480px;
+  margin: 0 2%;
   background-color: #151515;
   border-radius: 5%;
-  padding: 0 1.5%;
   font-size: 14.7px;
-  font-family: "Sansation", sans-serif;
-  letter-spacing: 1.5px;
 }
 
 .dish:hover {
@@ -106,22 +104,43 @@ p {
     -moz-transform: scale(1.2);
 }
 
-.dish span {
+.dish_img {
+  position: relative;
+  width: 350px;
+  text-align: center;
+  border-radius: 5%;
+}
+
+.to_the_dish {
+  font-family: "Piazzolla", serif;
+  font-size: 14.7px;
+  font-weight: 100;
+  text-align: left;
+  margin: 0 7%;
+  letter-spacing: 0.5px;
+  width: 240px;
+  height: 90px;
+  bottom: 22%;
+  position: relative;
+}
+
+.to_the_dish span {
   font-size: 17px;
   font-weight: bold;
   font-family: "Sansation", sans-serif;
   position: relative;
-  bottom: 10%;
+  top: 2%;
 }
 
 .price {
   height: 28px;
   width: 83px;
   font-size: 20px;
-  font-weight: bold;
-  top: 30%;
+  font-weight: 800;
+  font-family: "Piazzolla", serif;
+  top: 40%;
   position: relative;
-  right: 0%;
+  left: 5%;
 }
 
 .price:hover {
